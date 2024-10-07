@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.5rem;
+  font-family: League Spartan;
+  background-color: hsl(0, 0%, 100%);
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 74%;
+  margin: 8rem auto;
+}
+.first-cont {
+  display: flex;
+  margin-bottom: 3rem;
+  gap: 4rem;
+  position: relative;
+}
+.header {
+  flex: 1;
+}
+.rated {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin-top: 2rem;
+}
+.title {
+  font-size: 4.8rem;
+  font-weight: 800;
+  padding-right: 15rem;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 2rem;
+  letter-spacing: -0.1rem;
+}
+.text {
+  color: hsl(303, 10%, 53%);
+  padding-right: 11rem;
+  line-height: 1.3;
+  font-weight: 500;
+}
+.icon {
+  width: 1.8rem;
+  stroke: rgb(243, 207, 1);
+  fill: hwb(51 3% 21%);
+  fill: darkorange;
+}
+.review,
+.guru,
+.besttech {
+  width: 78%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+  gap: 4rem;
+  padding: 1.5rem 0;
+  border-radius: 0.5rem;
+  color: hsl(300, 43%, 22%);
+  padding-right: 1rem;
+}
+.review,
+.guru,
+.besttech p {
+  /* background-color: aqua; */
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+.guru {
+  margin-left: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.8rem;
+}
+.besttech {
+  margin-left: 8rem;
+}
+.second-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  padding-right: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  /* height: 33rem; */
+  box-sizing: border-box;
+}
+.client-one,
+.client-two,
+.client-three {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  padding: 3.5rem 3rem;
+  flex: 1 auto 0;
+  border-radius: 0.7rem;
+  height: 19rem;
+  color: hsla(0, 0%, 100%, 0.863);
+}
+.image {
+  width: 3.3rem;
+  border-radius: 50%;
+}
+.head {
+  display: flex;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+  /* justify-content: center; */
+  align-items: center;
+}
+.second-cont p {
+  line-height: 1.4;
+  font-size: 1.4rem;
+}
+.client-two {
+  margin-top: 1.5rem;
+}
+
+.client-three {
+  margin-top: 3rem;
+}
+.head div {
+  color: hsl(333, 80%, 67%);
+  font-size: 1.3rem;
+}
+.name {
+  margin-bottom: 0.4rem;
+  color: rgba(255, 255, 255, 0.829) !important;
+}
+.circul {
+  width: 90rem;
+  height: 80rem;
+  /* background-color: hsl(300, 24%, 96%); */
+  background: linear-gradient(
+    to bottom,
+    hsl(300, 24%, 96%),
+    hsla(300, 24%, 96%, 0.89)
+  );
+  border-radius: 50%;
+  position: absolute;
+  top: -54rem;
+  left: -40rem;
+  z-index: -1;
+}
+.circule {
+  width: 50rem;
+  height: 50rem;
+  /* background-color: hsl(300, 24%, 96%); */
+  background: linear-gradient(
+    to bottom,
+    hsla(300, 24%, 96%, 0.801),
+    hsla(300, 24%, 96%, 0)
+  );
+  border-radius: 50%;
+  position: absolute;
+  top: 5rem;
+  left: 83%;
+  z-index: -1;
+}
+@media (max-width: 83.5em) {
+  .review,
+  .guru,
+  .besttech {
+    gap: 0.6rem;
+  }
+}
+
+@media (max-width: 76.125em) {
+  .container {
+    max-width: 91%;
+  }
+}
+
+@media (max-width: 61.9375em) {
+  html {
+    font-size: 59%;
+  }
+  .container {
+    max-width: 97%;
+  }
+  .first-cont {
+    gap: 0;
+  }
+  .title {
+    padding-right: 6rem;
+  }
+  .text {
+    padding-right: 4rem;
+  }
+}
+
+@media (max-width: 52.56em) {
+  .second-cont {
+    padding-right: 0.5rem;
+    gap: 1rem;
+  }
+  .client-one,
+  .client-two,
+  .client-three {
+    padding: 2.5rem 1.5rem;
+  }
+  .icon {
+    width: 1.4rem;
+  }
+  .title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .container {
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+  }
+  .first-cont {
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    /* padding-top: 1rem; */
+    /* margin-bottom: 7rem; */
+  }
+  .rated {
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+  .review,
+  .guru,
+  .besttech {
+    margin-left: 0;
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+  .second-cont {
+    flex-direction: column;
+    width: 80%;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 88%;
+    text-align: center;
+  }
+  .text {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  .title {
+    padding-right: 0rem;
+    /* width: 22rem; */
+  }
+  .second-cont {
+    width: 80%;
+    /* align-self: center; */
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .circul {
+    width: 77rem;
+    height: 77rem;
+  }
+  .client-one,
+  .client-two,
+  .client-three {
+    padding: 1.5rem 1.5rem;
+    height: auto;
+  }
+}
